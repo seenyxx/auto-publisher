@@ -27,7 +27,7 @@ async def on_message(message):
     if (not message.guild.me.guild_permissions.administrator):
         return
     
-    if (message.author.id == message.guild.me.id or message.author.bot):
+    if (message.author.id == message.guild.me.id):
         return
 
     if (message.content.startswith(config['prefix'])):
